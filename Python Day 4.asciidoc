@@ -1,0 +1,154 @@
+Create a file
+
+
++*In[1]:*+
+[source, ipython3]
+----
+abc = open("Hello World.txt", 'w')
+abc.write("Welcome to the craze")
+abc.close()
+----
+
+
++*In[2]:*+
+[source, ipython3]
+----
+abc = open("Hello World.txt", 'r')
+content =abc.read()
+abc.close()
+----
+
+
++*In[3]:*+
+[source, ipython3]
+----
+content
+----
+
+
++*Out[3]:*+
+----'Welcome to the craze'----
+
+
++*In[4]:*+
+[source, ipython3]
+----
+batch =open("Hello new batch", 'w')
+batch.write ("Welcome to the new session")
+batch.close()
+----
+
+
++*In[5]:*+
+[source, ipython3]
+----
+batch = open("Hello new batch", 'r')
+content =batch.read()
+batch.close()
+----
+
+
++*In[6]:*+
+[source, ipython3]
+----
+content
+----
+
+
++*Out[6]:*+
+----'Welcome to the new session'----
+
+
++*In[8]:*+
+[source, ipython3]
+----
+batch =open("Hello new batch", 'a')
+batch.write (" Lets make it memorable!!!")
+batch.close()
+----
+
+
++*In[9]:*+
+[source, ipython3]
+----
+batch =open("Hello new batch", 'r+')
+print (batch.read())
+batch.close()
+----
+
+
++*Out[9]:*+
+----
+Welcome to the new sessionLets make it memorable!!! Lets make it memorable!!!
+----
+
+
++*In[10]:*+
+[source, ipython3]
+----
+def func():
+    print("Hello boomers")
+    print("Hope you guys are comfortable")
+    print("Feel free to reach us")
+    print("Reagrds Appna hin company hain")
+----
+
+
++*In[11]:*+
+[source, ipython3]
+----
+func()
+----
+
+
++*Out[11]:*+
+----
+Hello boomers
+ Hope you guys are comfortable
+Feel free to reach us
+Reagrds Appna hin company hain
+----
+
+
++*In[13]:*+
+[source, ipython3]
+----
+func()
+----
+
+
++*Out[13]:*+
+----
+Hello boomers
+ Hope you guys are comfortable
+Feel free to reach us
+Reagrds Appna hin company hain
+----
+
+
++*In[23]:*+
+[source, ipython3]
+----
+def func1(name):
+    print("Hello", name)
+    print("Hope you guys are comfortable")
+    print("Feel free to reach us")
+    print("Reagrds Appna hin company hain")
+
+----
+
+
++*In[25]:*+
+[source, ipython3]
+----
+func1("Mr Bean")
+----
+
+
++*Out[25]:*+
+----
+Hello Mr Bean
+Hope you guys are comfortable
+Feel free to reach us
+Reagrds Appna hin company hain
+----
